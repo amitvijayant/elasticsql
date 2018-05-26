@@ -64,12 +64,12 @@ func handleGroupByColName(colName *sqlparser.ColName, index int, child msi) msi 
 	if index == 0 {
 		innerMap["terms"] = msi{
 			"field": colName.Name.String(),
-			"size":  200, // this size may need to change ?
+			"size":  10000, // this size may need to change ?
 		}
 	} else {
 		innerMap["terms"] = msi{
 			"field": colName.Name.String(),
-			"size":  200,
+			"size":  10000,
 		}
 	}
 
